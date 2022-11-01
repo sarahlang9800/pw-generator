@@ -32,7 +32,7 @@ https://github.com/sarahlang9800/portfolio
 ## Example Photo 
 ![Password Generator Example Picture](/Assets/images/pw-generator%20example%20photo.png)
 
-## Discription 
+## Description 
 * Asks the user for the length they would like their password to be
 * If the users input is less than 8 or greater than 128 the user is promted to select a number inbetween.
 * Gives the user four criterias and prompts them to select at least one.

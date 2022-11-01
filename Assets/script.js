@@ -1,16 +1,21 @@
 // Assignment code here
 function checkNumber(passwordLength) {
-  if (!isNaN(parseFloat(passwordLength) && Number.isInteger(passwordLength))) {
+  var number = Number(passwordLength)
+  if (!isNaN(number) && Number.isInteger(number)) {
     return true
   }
   return false
 }
+
 function generatePassword() {
   var isInteger
   do {
     var passwordLength = prompt("How long would you like your new password to be?")
     isInteger = checkNumber(passwordLength)
-    console.log(isInteger)
+    if (!isInteger) {
+      window.alert("Input is invalad please enter a whole number");
+      generatePassword()
+    }
   } while (!isInteger)
 
   // Returns a number of at least 8 characters and no more than 128 characters!!!!
@@ -36,7 +41,7 @@ function generatePassword() {
 
   var hasSymbols = window.confirm("Use symbols?");
   if (hasSymbols) {
-   mergeArrays(input, symbols)
+    mergeArrays(input, symbols)
   }
 
   var hasNumbers = window.confirm("Use numbers?");
@@ -53,7 +58,6 @@ function generatePassword() {
   if (hasLowerCase) {
     mergeArrays(input, lowerCase)
   }
-console.log(input)
 
   for (let i = 0; i < passwordLength; i++) {
     let randomNumber = Math.floor((Math.random() * input.length))
