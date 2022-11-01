@@ -22,12 +22,11 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
-
 ## Live URL
-https://sarahlang9800.github.io/portfolio/
+https://sarahlang9800.github.io/pw-generator/
 
 ## Link to Code
-https://github.com/sarahlang9800/portfolio
+https://github.com/sarahlang9800/pw-generator.git
 
 ## Example Photo 
 ![Password Generator Example Picture](/Assets/images/pw-generator%20example%20photo.png)
